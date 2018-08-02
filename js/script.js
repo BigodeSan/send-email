@@ -13,13 +13,22 @@ $(function($){
             message: $("#mensagem").val(),
         },
         dataType: "json"
-        }).done(function(){
-                $("#nome").val("");
-                $("#email").val("");
-                $("#telefone").val(""),    
-                $("#mensagem").val("");
-            document.getElementById('teste').innerHTML = "<div class="alert alert-success">Envio Realizado!</div>";    
-            //alert("Email enviado com sucesso!");
+        },
+                
+                cache: false,
+                success: function()  {
+                    // Success message
+                    $('#success').html("<div class='alert alert-success'>");
+                    $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                        .append("</button>");
+                    $('#success > .alert-success')
+                        .append("<strong>Sua Mensagem foi enviada. </strong>");
+                    $('#success > .alert-success')
+                        .append('</div>');
+
+                    //clear all fields
+                    $('#contactForm').trigger("reset");
+                })
         }).fail(function(){
                 alert("Não foi possivel enviar seu email, tente mais tarde!");
         });
