@@ -8,31 +8,68 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
+     <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">  
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
   </head>
-  <body>
-    <h1>Oi Mundo!</h1>
-    <form id="form" method="POST">
-        <div class="form-group">
-            <label>Nome:</label>
-            <input type="text" name="name" id="name" class="form-control">
+  <body data-spy="scroll" data-target=".menu-navegacao" data-offset="80">
+    
+     
+      
+    <!-- Contato -->
+      
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-header"><h1>Contato<small> Fale conosco agora! </small></h1></div>
+                </div>
+            </div>
+            
+            <div class="row contato">
+                <div class="col-xs-12">
+                    <p class="bg-success aviso">Preencha o Formulário abaixo para entrar em contato conosco!</p>
+                </div>
+            </div>
+            <div class="row contato">
+                <div class="col-xs-12">
+                    <form name="form" id="form" method="post">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="nome" id="nome" class="form-control input-lg" placeholder="Qual o seu Nome? *" required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Qual o seu e-mail? *" required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" name="telefone" id="telefone" class="form-control input-lg" placeholder="Seu Telefone?"/>
+                                </div>
+                            </div>
+                       
+                            <div class="col-md-6">
+                                <textarea name="mensagem" id="mensagem" class="form-control input-lg" placeholder="Envie sua Mensagem! *" required></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            
+                            <div class="col-sm-6">
+                                <!--    <div class="alert alert-success">Envio Realizado!</div> -->
+                            </div>
+                            <div class="col-sm-6">
+                                <button type="submit" class="btn btn-success btn-lg">Enviar Mensagem</button>
+                            </div>
+                        </div>
+                    </form>
+                     
+                    
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-            <label>Email</label>
-            <input type="email" name="_replyto" id="email" class="form-control">
-        </div>
-        <div class="form-group">
-            <label>Mensagem</label>
-            <textarea name="message" id="message" class="form-control"></textarea>
-            <p class="help-block text-danger"></p>
-        </div>
-        <div class="form-group">
-            <input type="submit" value="Send" class="btn btn-primary btn-lg">
-        </div>
-    </form>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    </section>
+     
+    <!-- // Fim do Contato --> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
   </body>
