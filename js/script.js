@@ -18,7 +18,8 @@ $(function($){
                 $("#email").val("");
                 $("#telefone").val(""),    
                 $("#mensagem").val("");
-                alert("Email enviado com sucesso!");
+            document.getElementById('tste').innerHTML = "<div class="alert alert-success">Envio Realizado!</div>";    
+            //alert("Email enviado com sucesso!");
         }).fail(function(){
                 alert("Não foi possivel enviar seu email, tente mais tarde!");
         });
