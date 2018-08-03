@@ -17,13 +17,9 @@ $(function($){
 		}).done(function send(){
 			$("#nome").val("");
 			$("#email").val("");
-            $("#telefone").val("");
+            		$("#telefone").val("");
 			$("#mensagem").val("");
-			//alert("Email enviado com sucesso!!!");
-            $.notify({
-	       message: 'Hello World',
-	       type: 'danger'
-});
+			alert("Email enviado com sucesso!!!");
 		}).fail(function(){
 			alert("Erro ao enviar email!");
 		});
