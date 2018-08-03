@@ -19,7 +19,11 @@ $(function($){
 			$("#email").val("");
             $("#telefone").val("");
 			$("#mensagem").val("");
-			alert("Email enviado com sucesso!!!");
+			//alert("Email enviado com sucesso!!!");
+            $('body').notify({
+	       message: 'Hello World',
+	       type: 'danger'
+});
 		}).fail(function(){
 			alert("Erro ao enviar email!");
 		});
