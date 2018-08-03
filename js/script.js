@@ -20,7 +20,7 @@ $(function($){
             $("#telefone").val("");
 			$("#mensagem").val("");
 			//alert("Email enviado com sucesso!!!");
-            $('body').notify({
+            $.notify({
 	       message: 'Hello World',
 	       type: 'danger'
 });
