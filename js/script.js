@@ -15,11 +15,11 @@ $(function($){
 	    },
 	    dataType: "json"
 		}).done(function(){
-			$('#mensagem').html("<div class='alert alert-danger'>");
-            		$('#mensagem > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+			$('#send').html("<div class='alert alert-danger'>");
+            		$('#send > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             		.append("</button>");
-         		 $('#mensagem > .alert-danger').append($("<strong>").text("Email enviado com sucesso!"));
-          		$('#mensagem > .alert-danger').append('</div>');
+         		 $('#send > .alert-danger').append($("<strong>").text("Email enviado com sucesso!"));
+          		$('#send > .alert-danger').append('</div>');
             
            	 $('#form').trigger("reset");
 		}).fail(function(){
