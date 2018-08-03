@@ -14,12 +14,14 @@ $(function($){
 	    	message: $("#mensagem").val()
 	    },
 	    dataType: "json"
-		}).done(function send(){
-			$("#nome").val("");
-			$("#email").val("");
-            		$("#telefone").val("");
-			$("#mensagem").val("");
-			alert("Email enviado com sucesso!!!");
+		}).done(function(){
+			$("#mensagem").html("<div class='alert alert-danger'>");
+            		$('#mensagem > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+            		.append("</button>");
+         		 $('#mensagem > .alert-danger').append($("<strong>").text("Desculpe, não foi possivel enviar seu email. Tente mais tarde!"));
+          		$('#mensagem > .alert-danger').append('</div>');
+            
+           	 $('#form').trigger("reset");
 		}).fail(function(){
 			alert("Erro ao enviar email!");
 		});
