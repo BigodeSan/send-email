@@ -18,7 +18,7 @@ $(function($){
 			$("#mensagem").html("<div class='alert alert-danger'>");
             		$('#mensagem > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             		.append("</button>");
-         		 $('#mensagem > .alert-danger').append($("<strong>").text("Desculpe, não foi possivel enviar seu email. Tente mais tarde!"));
+         		 $('#mensagem > .alert-danger').append($("<strong>").text("Email enviado com sucesso!"));
           		$('#mensagem > .alert-danger').append('</div>');
             
            	 $('#form').trigger("reset");
