@@ -15,7 +15,7 @@ $(function($){
 	    },
 	    dataType: "json"
 		}).done(function(){
-			$("#mensagem").html("<div class='alert alert-danger'>");
+			$('#mensagem').html("<div class='alert alert-danger'>");
             		$('#mensagem > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             		.append("</button>");
          		 $('#mensagem > .alert-danger').append($("<strong>").text("Email enviado com sucesso!"));
