@@ -8,10 +8,10 @@ $(function($){
 	    url: "https://formspree.io/sensualmdintima@gmail.com", 
 	    method: "POST",
 	    data: {
-	    	name: $("#name").val(),
-	    	email: $("#email").val(),
-	    	telefone: $("#telefone").val(),
-            message: $("#message").val()
+	    	Nome: $("#nome").val(),
+	    	Email: $("#email").val(),
+	    	Telefone: $("#telefone").val(),
+            Mensagem: $("#mensagem").val()
 	    },
 	    dataType: "json"
 		}).done(function(){
