@@ -18,7 +18,7 @@ $(function($){
 			$("#send").html("<div class='alert alert-success'>");
             $("#send > .alert-success").html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             .append("</button>");
-            $("#send > .alert-success").append($("<strong>").text("Email enviado com sucesso! retornaremos em breve."));
+            $("#send > .alert-success").append($("<strong>").text("Email enviado com sucesso! Retornaremos em breve."));
             $("#send > .alert-success").append('</div>');
             
             $('#form').trigger("reset");
