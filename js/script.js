@@ -18,6 +18,18 @@
             console.log(result); // < DEBUG
 
             $("#send").html("<div class='alert alert-success'>");
+		$.ajax({
+	    url: "https://simple-form.com/sensualmdintima@gmail.com", 
+	    method: "POST",
+	    data: {
+	    	Nome: $("#nome").val(),
+	    	Email: $("#email").val(),
+	    	Telefone: $("#telefone").val(),
+            Mensagem: $("#mensagem").val()
+	    },
+	    dataType: "json"
+		}).done(function(){
+			$("#send").html("<div class='alert alert-success'>");
             $("#send > .alert-success").html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             .append("</button>");
             $("#send > .alert-success").append($("<strong>").text("Email enviado com sucesso! Retornaremos em breve."));
@@ -37,4 +49,8 @@
         });
     });
 
+
 })(jQuery);
+
+}) ;
+
