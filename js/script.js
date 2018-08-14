@@ -5,7 +5,7 @@
         e.preventDefault();
 
         $.ajax({
-            url: 'https://formspree.io/sensualmdintima@gmail.com', 
+            url: 'https://formspree.io/sensualmdintima@www.sensualmodasintima.com.br', 
             method: 'POST',
             data: {
                 nome: $("#nome").val(),
