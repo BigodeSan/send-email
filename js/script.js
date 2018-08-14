@@ -10,6 +10,7 @@ $(function($){
 			 data: {
 			nome: $("#nome").val(),
 			email: $("#email").val(),
+			telefone: $("#telefone").val(),
 			mensagem: $("#mensagem").val()
 	    	},
 	    	dataType: "json"
