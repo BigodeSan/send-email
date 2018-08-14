@@ -14,7 +14,8 @@ $(function($){
 			mensagem: $("#mensagem").val()
 	    	},
 	    	dataType: "json"
-		}).done(function(){
+		}).done(function(result){
+			console.log(result); // < DEBUG
 			$("#send").html("<div class='alert alert-success'>");
 			$("#send > .alert-success").html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
 			.append("</button>");
@@ -23,7 +24,8 @@ $(function($){
 
 			$('#form').trigger("reset");
 			
-		}).fail(function(){
+		}).fail(function(err){
+			console.log(err); // < DEBUG
 			$("#send").html("<div class='alert alert-danger'>");
 			$("#send > .alert-danger").html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
 			.append("</button>");
